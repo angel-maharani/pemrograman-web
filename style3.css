@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Edu VIC WA NT Beginner SemiBold', serif;
+    position: relative;
+}
+
+/* Register & Login pojok kanan atas */
+.auth-links {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    z-index: 10;
+}
+
+.auth-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #00008B;
+    font-size: 16px;
+}
+
+.auth-links a:hover {
+    color: #00008B;
+}
+
+/* Header dengan logo dan nama toko */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px 20px 40px; /* atas disesuaikan agar tidak tertutup auth */
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+    margin-right: 20px;
+}
+
+.toko-nama {
+    font-size: 30px;
+    color: #a7395a;
+    font-weight: bold;
+}
+
+/* Navigasi Tengah */
+nav.navbar {
+    background-color: #f3d1f4;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(190, 105, 138);
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    color: rgb(207, 46, 108);
+}

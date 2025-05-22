@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiena Book</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: rgb(252, 203, 211);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+ 
+        .logo {
+            width: 90px;
+            height: 90px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .toko-nama {
+            font-size: 30px;
+            color: #c04e5c;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #f3d1f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #7a3e95;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+       color: #3f2d94;
+        }
+
+        .section {
+            padding: 50px 60px;
+            background-color: white;
+            margin: 30px auto;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 28px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .item-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .item {
+            background-color: #fafafa;
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .item img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .item p {
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="logo.buku.jpeg" alt="Logo Kiena Book" class="logo">
+    <div class="toko-nama">Kiena Book</div>
+    <div class="cart" id="cart" data-count="0" onclick="toggleCartPopup()">🛒 Keranjang</div>
+    <div class="cart-popup" id="cartPopup">
+        <h3>Isi Keranjang</h3>
+        <ul id="cartList"></ul>
+        <button onclick="hapusSemua()">Hapus Semua</button>
+    </div>
+</div>
+
+<nav>
+    <a href="#">HOME</a>
+    <a href="#">BUKU</a>
+    <a href="#">MAJALAH</a>
+    <a href="#">KORAN</a>
+</nav>
+
+<!-- Best Seller -->
+<div class="section" id="best-seller">
+    <h2>Best Seller</h2>
+    <div class="item-grid">
+        <div class="item"><img src="dilan.jpeg" alt="Dilan 1990"><p>Dilan 1990</p><button onclick="tambahKeranjang('Dilan 1990me')">Tambah ke Keranjang</button></div>
+        <div class="item"><img src="filosofi.jpeg" alt="Filosofi"><p>Filosofi Teras</p><button onclick="tambahKeranjang('Filosofie')">Tambah ke Keranjang</button></div>
+        <div class="item"><img src="laskar pelangi.jpeg" alt="Laskar Pelangi"><p>Laskar Pelangi</p><button onclick="tambahKeranjang('Laskar Pelangi')">Tambah ke Keranjang</button></div>
+        <div class="item"><img src="cantik.jpeg" alt="Cantik Itu Luka"><p>Cantik Itu Luka</p><button onclick="tambahKeranjang('Cantik Itu Luka')">Tambah ke Keranjang</button></div>
+    </div>
+</div>
+
+<!-- Buku -->
+<div class="section" id="buku">
+    <h2>Buku</h2>
+    <div class="item-grid">
+        <div class="item"><img src="buku2.jpeg" alt="Tenggelamnya Kapal Van Der Wijck"><p>Tenggelamnya Kapal Van Der Wijck</p><button onclick="tambahKeranjang('Tenggelamnya Kapal Van Der Wijck')">Tambah ke Keranjang</button></div>
+        <div class="item"><img src="buku1.jpeg" alt="Yellowface"><p>Yellowface</p><button onclick="tambahKeranjang('Yellowface')">Tambah ke Keranjang</button></div>
+        <div class="item"><img src="buku3.jpeg" alt="Loneliness"><p>Loneliness</p><button onclick="tambahKeranjang('Loneliness')">Tambah ke Keranjang</button></div>
+        <div class="item"><img src="buku5.jpeg" alt="Ayah"><p>Ayah</p><button onclick="tambahKeranjang('Ayah')">Tambah ke Keranjang</button></div>
+    </div>
+</div>
+
+<!-- Majalah -->
+<div class="section" id="majalah">
+    <h2>Majalah</h2>
+    <div class="item-grid">
+        <div class="item"><img src="majalah1.jpeg" alt="Marie Claire"><p>Marie Claire</p><button onclick="tambahKeranjang('Marie Claire')">Tambah ke Keranjang</button></div>
+        <div class="item"><img src="majalah2.jpeg" alt="Success"><p>Succes</p<button onclick="tambahKeranjang('Success')">Tambah ke Keranjang</button>div>
+        <div class="item"><img src="majalah3.jpeg" alt="Tempo"><p>Tempo</p><button onclick="tambahKeranjang('Tempo')">Tambah ke Keranjang</button></div>
+        <div class="item"><img src="majalah4.jpeg" alt="Femina"><p>Femina</p><button onclick="tambahKeranjang('Femina')">Tambah ke Keranjang</button></div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+ .navbar {
+        background: #f3d1f4;
+        margin: 0;
+        padding: 25px 25px;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+        display: flex;   
+    }
+    
+    .menu li {
+        padding-left: 0;
+        margin-right: 10px
+    }
+    
+    .menu a {
+        display: inline-block;
+        text-decoration: none;
+        margin-right: 10px;
+        color: rgb(190, 105, 138);
+    }
