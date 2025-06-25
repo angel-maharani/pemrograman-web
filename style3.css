@@ -16,19 +16,19 @@ body {
 .auth-links a {
     margin-left: 10px;
     text-decoration: none;
-    color: #00008B;
+    color: #007BFF;
     font-size: 16px;
 }
 
 .auth-links a:hover {
-    color: #00008B;
+    color: #007BFF;
 }
 
 /* Header dengan logo dan nama toko */
 .header {
     display: flex;
     align-items: center;
-    padding: 60px 40px 20px 40px; /* atas disesuaikan agar tidak tertutup auth */
+    padding: 3px 40px 20px 40px; /* atas disesuaikan agar tidak tertutup auth */
 }
 
 .left-header {
@@ -43,6 +43,7 @@ body {
 }
 
 .toko-nama {
+    margin-left: 390px;
     font-size: 30px;
     color: #a7395a;
     font-weight: bold;

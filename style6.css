@@ -1,0 +1,179 @@
+/* Body dan font dasar */
+body {
+    background-color:  rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Edu VIC WA NT Beginner SemiBold', serif;
+    position: relative;
+    color: #0b3d20;
+}
+
+/* Auth links di kanan atas */
+.auth-links {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    z-index: 10;
+}
+
+.auth-links a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #8e2e4c;
+
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.auth-links a:hover {
+    color: #8e2e4c;
+
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 5px 40px 20px 40px;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 170px;
+    height: 170px;
+    margin-right: 20px;
+}
+
+.toko-nama {
+    margin-left: 445px;
+    font-size: 30px;
+    color: #a7395a;
+    font-weight: bold;
+}
+
+/* Navbar */
+nav.navbar {
+    background-color: #f3d1f4;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px 0 0;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0b3d20;
+    font-size: 16px;
+}
+
+/* Best Seller Section */
+.best-seller-section {
+    width: 100%;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
+}
+
+
+.best-seller-section h2 {
+    font-size: 24px;
+    color: #2d3748;
+    border-bottom: 3px solid white;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+    text-align:left ; 
+}
+
+/* Tabel Best Seller */
+.best-seller-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+    text-align: left;
+}
+
+.best-seller-table td {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.best-seller-table td:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.best-seller-table img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.best-seller-table p {
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Info buku */
+.book-info h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #a7395a;
+}
+
+.book-info .author {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.book-info .price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+/* Tombol detail */
+.btn-detail {
+    background-color: #a7395a;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-detail:hover {
+    background-color: #8e2e4c;
+}
