@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Cerpen - Kiena Book</title>
+    <link rel="stylesheet" href="style8.css">
+    <style>
+        body {
+            font-family: 'Edu VIC WA NT Beginner SemiBold', serif;
+            background-color: #fff0f7;
+            margin: 0;
+        }
+
+        .cerpen-container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cerpen-container h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #a7395a;
+        }
+
+        .book-list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: nowrap;
+        }
+
+        .book-item {
+            flex: 0 0 180px; /* Lebar dikecilkan dari 220px */
+            /* height: 460px;   Tinggi dikecilkan dari 530px */
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 12px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .book-item img {
+            width: 100%;
+            height: 250px; /* Gambar dikecilkan dari 320px */
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .book-item p {
+            margin: 8px 0;
+            font-size: 15px;
+        }
+
+        .book-item a button {
+            margin-top: 0px;
+            padding: 8px 12px;
+            background-color: #a7395a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .book-item a button:hover {
+            background-color: #872c47;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cerpen-container">
+    <h2>Daftar Sejarah</h2>
+
+    <div class="book-list">
+        <div class="book-item">
+            <img src="sejarah1.jpeg" alt="Portugis & Spanyol di Maluku">
+            <p><strong>Portugis & Spanyol di Maluku</strong></p>
+            <p class="price">Rp 120.000</p>
+            <a href="detailsejarah1.html"><button>Sinopsis</button></a>
+        </div>
+
+        <div class="book-item">
+            <img src="sejarah2.jpeg" alt="Sejarah Sumatra">
+            <p><strong>Sejarah Sumatra</strong></p>
+            <p class="price">Rp 100.000</p>
+            <a href="detailsejarah2.html"><button>Sinopsis</button></a>
+        </div>
+
+        <div class="book-item">
+            <img src="sejarah3.jpeg" alt="Bukan 350 Tahun Dijajah">
+            <p><strong>Bukan 350 Tahun Dijajah</strong></p>
+            <p class="price">Rp 105.000</p>
+            <a href="detailsejarah3.html"><button>Sinopsis</button></a>
+        </div>
+
+        <div class="book-item">
+            <img src="sejarah4.jpeg" alt="Negara dan Kekuasaan di Jawa">
+            <p><strong>Negara dan Kekuasaan di Jawa</strong></p>
+            <p class="price">Rp 125.000</p>
+            <a href="detailsejarah4.html"><button>Sinopsis</button></a>
+        </div>
+
+        <div class="book-item">
+            <img src="sejarah5.jpeg" alt="Sejarah Indonesia Modern 1200-2004">
+            <p><strong>Sejarah Indonesia Modern 1200-2004</strong></p>
+            <p class="price">Rp 130.000</p>
+            <a href="detailsejarah5.html"><button>Sinopsis</button></a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
